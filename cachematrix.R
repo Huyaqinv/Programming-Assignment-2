@@ -32,3 +32,8 @@ cacheSolve <- function(x, ...) {
         x$setsolve(m)
         m
 }
+		
+matrixs<-matrix(rnorm(9),nrow=3,ncol=3)
+cachedNumbers=makeCacheMatrix(matrixs)
+cacheSolve(cachedNumbers)
+cacheSolve(cachedNumbers)
